@@ -6,8 +6,9 @@ import org.junit.Test;
 public class JobTest {
     @Before
     public void createJobObject() {
-        //JobOne = new Job("");
-       // JobTwo = new Job(JobOne++);
+        String jobOne = new Object Job(int id);
+       String jobTwo=new Object Job(int id++) ;
+
     }
 
     @Test
@@ -20,6 +21,13 @@ public class JobTest {
       //  assertTrue(condition);
 
        // assertNotNull(object);
+
+        //for test where they are one one id apart
+        //assertEquals(1, jobTwo.id - JobOne.id,  0);
+        // or like - assertTrue(jobTwo.id-jobOne.id=1);   ?
+
+
+
 
     }
 }
