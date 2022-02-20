@@ -72,7 +72,14 @@ public class JobTest {
     public void testToStringHandlesEmptyField(){
 
 }
+@Test
+    public void testToStringStartsAndEndsWithNewLine(){
 
+}
+@Test
+    public void testToStringContainsCorrectLabelsAndData(){
+
+}
 
 }
 

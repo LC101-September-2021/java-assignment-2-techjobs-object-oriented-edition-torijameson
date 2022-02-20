@@ -85,4 +85,17 @@ public class Job {
     public void setCoreCompetency(CoreCompetency coreCompetency) {
         this.coreCompetency = coreCompetency;
     }
+
+    @Override
+    public String toString() {
+        String dataNotFound ="Data not available";
+        return "[" +"\n"+
+                "ID: " + id +"\n"+
+                "Name: " + name + '\'' +"\n"+
+                "Employer: " + (employer.toString().equals("")? dataNotFound :employer.toString()) +"\n"+
+                "Location: " + (location.toString().equals("")? dataNotFound : location.toString()) +"\n"+
+                "Position Type: " + (positionType.toString().equals("")? dataNotFound :positionType.toString())  +"\n"+
+                "Core Competency: " + (coreCompetency.toString().equals("")? dataNotFound :coreCompetency.toString())  +"\n"+
+                ']';
+    }
 }
