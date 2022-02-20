@@ -1,13 +1,13 @@
 package org.launchcode.techjobs.oo.test;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.launchcode.techjobs.oo.*;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.*;
 
 /**
  * Created by LaunchCode
@@ -60,16 +60,18 @@ public class JobTest {
     @Test
     public void testJobsForEquality (){
         //Generate two Job objects that have identical field values EXCEPT for id. Test that equals returns false.
-        assertNotEquals(job1.getId(), job3.getId());
-        assertEquals(job1.getName(),  job3.getName());
-        assertEquals(job1.getEmployer(), job3.getEmployer());
-        assertEquals(job1.getLocation(),  job3.getLocation());
-        assertEquals(job1.getPositionType(),  job3.getPositionType());
-        assertEquals(job1.getCoreCompetency(),  job3.getCoreCompetency());
+        Assert.assertFalse(job1.getId()==job3.getId());
+        Assert.assertTrue(job1.getName().equals(job3.getName()));
+        Assert.assertTrue(job1.getEmployer()== job3.getEmployer());
+        Assert.assertTrue(job1.getLocation()==job3.getLocation());
+        Assert.assertTrue(job1.getPositionType()==job3.getPositionType());
+        Assert.assertTrue(job1.getCoreCompetency()==job3.getCoreCompetency());
 
     }
+@Test
+    public void testToStringHandlesEmptyField(){
 
-
+}
 
 
 }
