@@ -38,6 +38,8 @@ public class JobTest {
     @Test
     public void testSettingJobId() {
 
+        Assert.assertTrue(job1.getId()!==job2.getId());
+        Assert.assertTrue(job1.getId()++ ==job2.getId());
         // assertEquals(expected, actual, optional_delta);
 
         //  assertFalse(condition);
@@ -52,7 +54,7 @@ public class JobTest {
     }
     @Test
     public void testJobConstructorSetsAllFields(){
-        //A
+        //
         // new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"))
         //Assertions that these things show up right - class and value. result is boolean "objectName instanceof ClassName"
     }
