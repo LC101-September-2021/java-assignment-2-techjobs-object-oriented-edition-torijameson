@@ -2,7 +2,7 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-public class PositionType {
+public class PositionType extends JobField {
 
     private int id;
     private static int nextId = 1;
@@ -14,11 +14,13 @@ public class PositionType {
     }
 
     public PositionType(String value) {
-        this();
-        this.value = value;
+        //this();
+       // this.value = value;
+        super(value);
     }
 
     // ******Done:  Add a custom toString() method that returns the data stored in 'value'.
+   // since this one is custom- does it get moved too?
     @Override
     public String toString() {
         String result = value;
@@ -40,7 +42,7 @@ public class PositionType {
     }
     // Getters and Setters:
 
-    public int getId() {
+   /* public int getId() {
         return id;
     }
 

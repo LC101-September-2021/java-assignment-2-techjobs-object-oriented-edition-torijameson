@@ -70,15 +70,17 @@ public class JobTest {
     }
 @Test
     public void testToStringHandlesEmptyField(){
+//for  toString method
+Assert.assertTrue(toString("")=!"");
 
 }
 @Test
     public void testToStringStartsAndEndsWithNewLine(){
-
+Assert.assertTrue(toString().contains(instance of "\n"));
 }
 @Test
     public void testToStringContainsCorrectLabelsAndData(){
-
+Assert.assertTrue(toString().contains())
 }
 
 }
