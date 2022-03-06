@@ -17,6 +17,7 @@ public class JobTest {
     Job job1;
     Job job2;
     Job job3;
+    Job job4;
 
     @Before
     public void createJobObject() {
@@ -33,6 +34,7 @@ public class JobTest {
        job1 = new Job("Web Developer", employer1, location1, positionType1, coreCompetency1);
        job2 = new Job("Data Scientist", employer2, location2, positionType2, coreCompetency2);
        job3 = new Job("Web Developer", employer1, location1, positionType1, coreCompetency1);
+       job4=new Job();
     }
 
     @Test
@@ -62,17 +64,22 @@ public class JobTest {
     }
 @Test
     public void testToStringHandlesEmptyField(){
-//for  toString method
-Assert.assertTrue(toString("")=!"");
+Assert.assertTrue(job4.toString().isEmpty());
+} //updated 03/06/22
 
-}
 @Test
     public void testToStringStartsAndEndsWithNewLine(){
-Assert.assertTrue(toString().contains(instance of "\n"));
+Assert.assertTrue(job1.toString().endsWith("/n"));
 }
+
+
 @Test
-    public void testToStringContainsCorrectLabelsAndData(){
-Assert.assertTrue(toString().contains());
+    public void testToStringContainsCorrectLabelsAndData(){ //undated 3/06/22
+Assert.assertTrue(job3.toString().contains("Web Developer"));
+Assert.assertTrue(job3.toString().contains("Launchcode"));
+Assert.assertTrue(job3.toString().contains("Stl"));
+Assert.assertTrue(job3.toString().contains("Back-end developer"));
+Assert.assertTrue(job3.toString().contains("Java"));
 }
 
 }
