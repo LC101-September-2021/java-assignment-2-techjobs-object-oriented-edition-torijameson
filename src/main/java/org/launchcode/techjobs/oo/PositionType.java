@@ -1,29 +1,50 @@
 package org.launchcode.techjobs.oo;
 
-public class PositionType {
+import java.util.Objects;
 
-    private int id;
-    private static int nextId = 1;
-    private String value;
+public class PositionType extends JobField {
 
-    public PositionType() {
-        id = nextId;
-        nextId++;
-    }
-
+    //    private int id;
+//    private static int nextId = 1;
+//    private String value;
+//
+//    public PositionType() {
+//        id = nextId;
+//        nextId++;
+//    }
+//
     public PositionType(String value) {
-        this();
-        this.value = value;
+//        //this();
+//       // this.value = value;
+        super(value);
     }
+}
 
-    // TODO: Add a custom toString() method that returns the data stored in 'value'.
+    // ******Done:  Add a custom toString() method that returns the data stored in 'value'.
+    // since this one is custom- does it get moved too?
+//    @Override
+//    public String toString() {
+//        String result = value;
+//        return value;
+//    }
 
-    // TODO: Add custom equals and hashCode methods. Consider two PositionType objects "equal" when
+    // ****** Done: Add custom equals and hashCode methods. Consider two PositionType objects "equal" when
     //  their id fields match.
-
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof PositionType)) return false;
+//        PositionType that = (PositionType) o;
+//        return getId() == that.getId() && getValue().equals(that.getValue());
+//    }
+//}
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(getId(), getValue());
+//    }
     // Getters and Setters:
 
-    public int getId() {
+   /* public int getId() {
         return id;
     }
 
@@ -36,3 +57,5 @@ public class PositionType {
     }
 
 }
+}
+    */
