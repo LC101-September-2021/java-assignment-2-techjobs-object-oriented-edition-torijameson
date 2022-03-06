@@ -39,19 +39,9 @@ public class JobTest {
     public void testSettingJobId() {
 
         Assert.assertTrue(job1.getId()!= job2.getId());
-        Assert.assertTrue(job1.getId()++ ==job2.getId());
-        // assertEquals(expected, actual, optional_delta);
+        Assert.assertTrue(job2.getId() ==(1 + job1.getId())); //error due to ++ so changed syntax 3/06/22
+          }
 
-        //  assertFalse(condition);
-
-        //  assertTrue(condition);
-
-        // assertNotNull(object);
-
-        //for test where they are one one id apart
-        //assertEquals(1, jobTwo.id - JobOne.id,  0);
-        // or like - assertTrue(jobTwo.id-jobOne.id=1);   ?
-    }
     @Test
     public void testJobConstructorSetsAllFields(){
         //
