@@ -38,7 +38,7 @@ public class JobTest {
     @Test
     public void testSettingJobId() {
 
-        Assert.assertTrue(job1.getId()!==job2.getId());
+        Assert.assertTrue(job1.getId()!= job2.getId());
         Assert.assertTrue(job1.getId()++ ==job2.getId());
         // assertEquals(expected, actual, optional_delta);
 
@@ -82,7 +82,7 @@ Assert.assertTrue(toString().contains(instance of "\n"));
 }
 @Test
     public void testToStringContainsCorrectLabelsAndData(){
-Assert.assertTrue(toString().contains())
+Assert.assertTrue(toString().contains());
 }
 
 }

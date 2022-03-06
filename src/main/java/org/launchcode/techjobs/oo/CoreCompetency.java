@@ -4,9 +4,9 @@ import java.util.Objects;
 
 public class CoreCompetency extends JobField {
 
-    private int id;
-    private static int nextId = 1;
-    private String value;
+//    private int id;
+//    private static int nextId = 1;
+//    private String value;
 
    /* public CoreCompetency() {
        this.id = nextId;
@@ -14,11 +14,11 @@ public class CoreCompetency extends JobField {
     } */
 
     public CoreCompetency(String value) {
-       // this();
-       // this.value = value;
+        // this();
+        // this.value = value;
         super(value);
     }
-
+}
     // Custom toString, equals, and hashCode methods:
 
    /* @Override
@@ -26,18 +26,18 @@ public class CoreCompetency extends JobField {
         return value;
     } */
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof CoreCompetency)) return false;
-        CoreCompetency that = (CoreCompetency) o;
-        return id == that.id;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof CoreCompetency)) return false;
+//        CoreCompetency that = (CoreCompetency) o;
+//        return id == that.id;
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(id);
+//    }
 
    //********
    /* public String getValue() {
@@ -48,5 +48,6 @@ public class CoreCompetency extends JobField {
     
     public void setValue(String value) {
         this.value = value;
-    }
-}
+    */
+
+
